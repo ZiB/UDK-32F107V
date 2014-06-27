@@ -14,6 +14,12 @@
 
 #define PIN_USER_LED			B, 10, HIGH, MODE_OUTPUT_PUSH_PULL, SPEED_2MHZ
 
+#define PIN_LCD_HY32D_CS			C,  9,  LOW, MODE_OUTPUT_PUSH_PULL, SPEED_50MHZ
+#define PIN_LCD_HY32D_WR			C,  6,  LOW, MODE_OUTPUT_PUSH_PULL, SPEED_50MHZ
+#define PIN_LCD_HY32D_RD			D, 15,  LOW, MODE_OUTPUT_PUSH_PULL, SPEED_50MHZ
+#define PIN_LCD_HY32D_RS			C,  8, HIGH, MODE_OUTPUT_PUSH_PULL, SPEED_50MHZ
+#define PIN_LCD_HY32D_BL			D, 14, HIGH, MODE_OUTPUT_PUSH_PULL, SPEED_50MHZ
+
 #if defined STM32F107VCT6
 
 #define STM32F10X_CL
@@ -25,6 +31,9 @@
 
 #endif
 
+#include "macros.h"
 #include "macros_stm32f10x.h"
+
+#include "lcd.h"
 
 #endif /* MAIN_H_ */

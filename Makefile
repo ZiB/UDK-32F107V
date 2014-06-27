@@ -3,6 +3,7 @@
 #-------------------------------------------------------------------------------
 
 SRC_C  = main.c
+SRC_C += lcd.c
 
 ifeq ($(MCU),STM32F107VCT6)
 
@@ -32,6 +33,7 @@ INCLUDES += -Idevice
 INCLUDES += -Imcu
 INCLUDES += -Imcu/core
 INCLUDES += -Imcu/peripherals
+INCLUDES += -Imcu/peripherals/lcd
 INCLUDES += -Imcu/startup
 INCLUDES += -Iutility
 
