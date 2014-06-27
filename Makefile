@@ -46,6 +46,7 @@ VPATH += mcu/startup
 VPATH += utility
 
 FLAGS_C += $(INCLUDES) -I.
+FLAGS_C += -D$(MCU)
 FLAGS_C += -Os
 FLAGS_C += -gdwarf-2 -g3
 FLAGS_C += -Wall
