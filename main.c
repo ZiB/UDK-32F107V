@@ -52,6 +52,9 @@ void main(void)
 
 	rcc_init();
 
+	lcd_init();
+	lcd_fill_screen(LCD_COLOR_BLUE);
+
 	while (1)
 	{
 		if(PIN_SIGNAL(PIN_BUTTON_TAMPER))

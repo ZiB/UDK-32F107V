@@ -31,6 +31,9 @@
 
 #endif
 
+#include "macros.h"
 #include "macros_stm32f10x.h"
+
+#include "lcd.h"
 
 #endif /* MAIN_H_ */
